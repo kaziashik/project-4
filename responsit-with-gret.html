@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+
+        .nav-menu {
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+
+        .main {
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+
+        .aside {
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: center
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+        }
+
+        /* For destop: */
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 10Px;
+        }
+
+        .row::after {
+            content: '';
+            clear: both;
+            display: table;
+
+        }
+
+        @media screen and (max-width:768px) {
+
+            [class*='col-'] {
+                width: 100%;
+
+            }
+
+            .nav-menu a {
+                text-align: center;
+                background-color: aqua;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>KAZI ASHIKUR RAHMAN</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="">Home</a>
+            <a href="">Tutrial</a>
+            <a href="">ContactS</a>
+        </div>
+        <div class="main col-7">
+
+            <h1>I am a web designer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad iste obcaecati earum reprehenderit
+                facilis delectus optio quasi minus a assumenda, magnam qui quos quo. Cumque consequuntur dicta delectus
+                rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad iste obcaecati earum reprehenderit
+                facilis delectus optio quasi minus a assumenda, magnam qui quos quo. Cumque consequuntur dicta delectus
+                rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad iste obcaecati earum reprehenderit
+                facilis delectus optio quasi minus a assumenda, magnam qui quos quo. Cumque consequuntur dicta delectus
+                rerum.</p>
+        </div>
+        <div class="aside col-3">
+            <h2>What I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ratione.</p>
+
+            <h2>What I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ratione.</p>
+
+            <h2>What I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ratione.</p>
+            <h2>What I love?</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ratione.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; study with ASHIKUR 2020. Deceloped by ASHIKUR
+    </div>
+</body>
+
+</html>
